@@ -12,7 +12,7 @@ This library provides a robust infrastructure for implementing the Command Query
 - **Aggregate Root Support:** Simplify the management of domain aggregates with built-in support for Aggregate Roots.
 - **Annotation-Based Configuration:** Configure command handlers and event sourcing using annotations, reducing boilerplate code and promoting clean architecture.
 - **Scalable and Extensible:** Designed to scale with the complexity of the application and easily extend functionality with custom components.
-- **Asynchronous Processing:** Support for asynchronous processing of commands and events for improved performance and responsiveness.
+- **Asynchronous Processing:** Support for asynchronous processing of commands and events for improved performance and responsiveness. (Currently Not Supported)
 
 ## Usage
 1. **Define Commands and Events:** Create classes to represent commands and events that encapsulate changes to domain entities.
