@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/zaxxio/spring-boot-starter-eventa.svg)](https://jitpack.io/#zaxxio/spring-boot-starter-eventa)
 
-# Eventa (Infrastructure Ready)
+# Eventa (Infrastructure Ready Event-Sourcing and CQRS)
 ## Overview
 
 This library provides a robust infrastructure for implementing the Command Query Responsibility Segregation (CQRS) pattern along with Event Sourcing in Java applications. CQRS separates the responsibility of handling commands (write operations) from queries (read operations), while Event Sourcing ensures that changes to the application state are captured as a sequence of events.
