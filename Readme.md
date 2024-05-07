@@ -169,7 +169,7 @@ public class QueryCommandHandler {
 ```
 
 ## Infrastructure Dependency
-```properties
+```yaml
 spring:
   application:
     name: spring-boot-app
