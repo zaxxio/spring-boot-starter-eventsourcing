@@ -1,5 +1,6 @@
-# Eventa (Infrastructure Ready)
+[![](https://jitpack.io/v/zaxxio/spring-boot-starter-eventa.svg)](https://jitpack.io/#zaxxio/spring-boot-starter-eventa)
 
+# Eventa (Infrastructure Ready)
 ## Overview
 
 This library provides a robust infrastructure for implementing the Command Query Responsibility Segregation (CQRS) pattern along with Event Sourcing in Java applications. CQRS separates the responsibility of handling commands (write operations) from queries (read operations), while Event Sourcing ensures that changes to the application state are captured as a sequence of events.
@@ -14,13 +15,27 @@ This library provides a robust infrastructure for implementing the Command Query
 - **Asynchronous Processing:** Support for asynchronous processing of commands and events for improved performance and responsiveness.
 
 ## Usage
-
 1. **Define Commands and Events:** Create classes to represent commands and events that encapsulate changes to domain entities.
 2. **Implement Command Handlers:** Define command handler methods to process incoming commands and update the state of aggregates.
 3. **Apply Event Sourcing:** Utilize event sourcing to persist domain events and rebuild aggregate state from event streams.
 4. **Configure Infrastructure:** Set up infrastructure components such as command buses, event stores, and event processors to manage command and event handling.
 5. **Integrate with Application:** Integrate the library with your application to leverage its CQRS and Event-Sourcing capabilities seamlessly.
 
+
+
+# Repository
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+# Dependency
+```xml
+
+```
 ## Sample Aggregate
 
 ```java
