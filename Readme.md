@@ -37,7 +37,7 @@ This library provides a robust infrastructure for implementing the Command Query
 <dependency>
     <groupId>com.github.zaxxio</groupId>
     <artifactId>spring-boot-starter-eventa</artifactId>
-    <version>1.0.0</version>
+    <version>Tag</version>
 </dependency>
 ```
 ## Sample Aggregate
