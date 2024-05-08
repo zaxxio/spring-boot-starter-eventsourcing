@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/zaxxio/spring-boot-starter-eventa.svg)](https://jitpack.io/#zaxxio/spring-boot-starter-eventa)
 
-# Eventa (Infrastructure Ready)
+# Eventa (Infrastructure Ready Event-Sourcing and CQRS)
 ## Overview
 
 This library provides a robust infrastructure for implementing the Command Query Responsibility Segregation (CQRS) pattern along with Event Sourcing in Java applications. CQRS separates the responsibility of handling commands (write operations) from queries (read operations), while Event Sourcing ensures that changes to the application state are captured as a sequence of events.
@@ -12,7 +12,7 @@ This library provides a robust infrastructure for implementing the Command Query
 - **Aggregate Root Support:** Simplify the management of domain aggregates with built-in support for Aggregate Roots.
 - **Annotation-Based Configuration:** Configure command handlers and event sourcing using annotations, reducing boilerplate code and promoting clean architecture.
 - **Scalable and Extensible:** Designed to scale with the complexity of the application and easily extend functionality with custom components.
-- **Asynchronous Processing:** Support for asynchronous processing of commands and events for improved performance and responsiveness.
+- **Asynchronous Processing:** Support for asynchronous processing of commands and events for improved performance and responsiveness. (Currently Not Supported)
 
 ## Usage
 1. **Define Commands and Events:** Create classes to represent commands and events that encapsulate changes to domain entities.
@@ -227,7 +227,7 @@ spring:
 
 ## Copyright 
 ```text
-Copyright 2022 Partha Sutradhar
+Copyright 2024 Partha Sutradhar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
