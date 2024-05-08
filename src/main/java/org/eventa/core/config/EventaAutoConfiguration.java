@@ -15,11 +15,11 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @Log4j2
 @AutoConfiguration
+@ComponentScan(basePackages = "org.eventa.core")
 @Configuration(proxyBeanMethods = false)
 @AutoConfigureAfter(MongoAutoConfiguration.class)
 @EnableConfigurationProperties(EventaProperties.class)
 @EnableMongoRepositories(basePackageClasses = {EventStoreRepository.class})
-@ComponentScan(basePackages = "org.eventa.core")
 public class EventaAutoConfiguration {
 
 
