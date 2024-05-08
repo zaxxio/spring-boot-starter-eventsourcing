@@ -19,7 +19,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @AutoConfigureAfter(MongoAutoConfiguration.class)
 @EnableConfigurationProperties(EventaProperties.class)
 @EnableMongoRepositories(basePackageClasses = {EventStoreRepository.class})
-@ComponentScan(basePackages = "org.wsd.core")
+@ComponentScan(basePackages = "org.eventa.core")
 public class EventaAutoConfiguration {
 
 
@@ -32,7 +32,7 @@ public class EventaAutoConfiguration {
     }
 
     @Bean
-    MongoTransactionManager transactionManager(MongoDatabaseFactory dbFactory) {
+    public MongoTransactionManager transactionManager(MongoDatabaseFactory dbFactory) {
         return new MongoTransactionManager(dbFactory);
     }
 
