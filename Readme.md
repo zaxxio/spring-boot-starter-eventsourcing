@@ -35,11 +35,7 @@ Eventa offers a robust framework for implementing Command Query Responsibility S
 - **High Load Management:** Manage high request volumes efficiently through optimized threading and resource handling.
 
 # Architecture
-![Screenshot](./assets/eventa_arch.png)
-
-
-# Endpoint
-![Screenshot](./assets/swagger.png)
+![Screenshot](/assets/eventa_arch.png)
 
 ## Sample Aggregate
 
