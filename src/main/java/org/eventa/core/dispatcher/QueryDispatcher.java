@@ -1,4 +1,4 @@
-package org.eventa.core.gateway;
+package org.eventa.core.dispatcher;
 
 import org.eventa.core.query.ResponseType;
 

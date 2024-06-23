@@ -1,9 +1,9 @@
-package org.eventa.core.gateway.impl;
+package org.eventa.core.dispatcher.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
-import org.eventa.core.gateway.QueryDispatcher;
+import org.eventa.core.dispatcher.QueryDispatcher;
 import org.eventa.core.query.ResponseType;
 import org.eventa.core.registry.QueryHandlerRegistry;
 
