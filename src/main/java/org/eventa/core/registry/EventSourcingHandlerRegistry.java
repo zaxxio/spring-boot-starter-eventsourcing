@@ -7,11 +7,12 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 @Component
 public class EventSourcingHandlerRegistry {
-    private final Map<Class<?>, List<Method>> routes = new HashMap<>();
+    private final ConcurrentHashMap<Class<?>, List<Method>> routes = new ConcurrentHashMap<>();
 
     public void registerHandler(Class<?> type, Method method) {
         routes.computeIfAbsent(type, methods -> new LinkedList<>()).add(method);

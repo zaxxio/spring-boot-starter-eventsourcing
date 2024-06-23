@@ -4,11 +4,12 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class CommandHandlerRegistry {
 
-    private final Map<Class<?>, List<Method>> routes = new HashMap<>();
+    private final ConcurrentHashMap<Class<?>, List<Method>> routes = new ConcurrentHashMap<>();
 
     public void registerHandler(Class<?> type, Method method) {
         routes.computeIfAbsent(type, methods -> new LinkedList<>()).add(method);

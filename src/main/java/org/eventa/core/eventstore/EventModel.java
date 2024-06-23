@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.eventa.core.events.BaseEvent;
 
 import java.util.Date;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -18,9 +19,10 @@ public class EventModel {
     @Id
     private String id;
     @Indexed
-    private String aggregateIdentifier;
+    private UUID aggregateIdentifier;
     private String aggregateType;
     private String eventType;
+    @Indexed
     private Integer version;
     private BaseEvent baseEvent;
     private Date timestamp;

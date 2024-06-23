@@ -1,0 +1,3 @@
+eventa:
+  kafka:
+    event-store-name: eventa-store
