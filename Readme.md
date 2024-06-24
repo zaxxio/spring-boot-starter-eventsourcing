@@ -18,6 +18,7 @@ Eventa offers a robust framework for implementing Command Query Responsibility S
 - **Asynchronous Processing:** Improve performance with asynchronous processing of commands and events.
 - **Transactional Support:** Maintain data consistency across distributed systems.
 - **High Concurrency Handling:** Optimized for high levels of concurrency.
+- **DistributedLock:** Optimized Distributed Lock for Highly Scalable System.
 - **Saga Orchestration:** Manage complex, multi-step business transactions across microservices.
 
 ## Usage
